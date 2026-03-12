@@ -41,7 +41,7 @@ export async function GET(request: Request) {
     })
     //const resJson = await res.json()
     //const resJsonProx = await resProx.json()
-    const resJsonAtendi = await resTotaisAtend.json() as string[]
+    const resJsonAtendi = await resTotaisAtend.json() 
     //atendimentos = atendimentos[4].widgets[0].rows
 
     const atendimentos = {} as AtendimentoType
