@@ -10,7 +10,7 @@ export function useAtendimentos() {
 
   async function handleAtendimento() {
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}api/atend`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/atend`, {
         method: "GET",
         cache: "no-store",
         headers: {
