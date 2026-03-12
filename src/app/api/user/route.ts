@@ -6,7 +6,7 @@ export async function GET(request: Request) {
         cache: "no-store",
         headers: {
             'Content-type': 'application/json',
-            'Authorization':  `${process.env.NEXT_PUBLIC_API_TOKEN_SURI}`
+            'Authorization':  `${process.env.TOKEN_SURI}`
         }
     })
     const resJson = await res.json()
