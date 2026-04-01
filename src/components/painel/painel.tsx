@@ -32,7 +32,7 @@ export default function Painel() {
         </div>
 
     }
-    console.log(`lengha -- : ${atendimentos?.totalAtendimentos.totalAtendimentos.value}`)
+    console.log(`lengha -- : ${atendimentos?.totalAtendimentos?.totalAtendimentos?.value}`)
 
     return (
         <>
