@@ -27,7 +27,7 @@ export default function Painel() {
 
     }, [])
     console.log(`lengh -- : ${atendimentos?.atendimentos.length}`)
-    if (!atendimentos || atendimentos?.atendimentos.length === 0 || users?.length ===0) {
+    if (!atendimentos || atendimentos?.atendimentos?.length === 0 || users?.length ===0) {
         return <div className="h-5/6 flex justify-center items-center">
             <div><FiLoader size={55} className="text-blue-600 animate-spin"/></div>
         </div>
