@@ -26,7 +26,8 @@ export default function Painel() {
         return () => clearInterval(interval)
 
     }, [])
-    if (!atendimentos || atendimentos.atendimentos.length === 0 || users.length ===0) {
+    console.log(`lengh -- : ${atendimentos?.atendimentos.length}`)
+    if (!atendimentos || atendimentos?.atendimentos.length === 0 || users?.length ===0) {
         return <div className="h-5/6 flex justify-center items-center">
             <div><FiLoader size={55} className="text-blue-600 animate-spin"/></div>
         </div>
