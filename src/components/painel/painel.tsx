@@ -35,7 +35,7 @@ export default function Painel() {
     }
     return (
         <>
-           <TotaisAtend user={users} atendimentos={atendimentos.totalAtendimentos} />
+           <TotaisAtend user={users} atendimentos={atendimentos?.totalAtendimentos} />
 
             <div className="w-10/12 grid mx-auto sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-y-6 gap-x-5 px-2">
 
@@ -44,7 +44,7 @@ export default function Painel() {
                         key={user.id}
 
                         user={user}
-                        atendimentos={atendimentos.atendimentos}
+                        atendimentos={atendimentos?.atendimentos}
 
                     />
                 ))}
