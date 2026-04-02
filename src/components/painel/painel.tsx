@@ -26,13 +26,14 @@ export default function Painel() {
         return () => clearInterval(interval)
 
     }, [])
-    if (!atendimentos || atendimentos?.atendimentos?.length === 0  || users?.length === 0 &&(!atendimentos?.totalAtendimentos?.totalAtendimentos?.value || !atendimentos?.totalAtendimentos?.totalEspera?.value)) {
+
+    if ( !atendimentos || atendimentos?.atendimentos?.length === 0  || users?.length === 0 &&(atendimentos?.totalAtendimentos?.totalAtendimentos?.value == undefined || !atendimentos?.totalAtendimentos?.totalEspera?.value == undefined)) {
         return <div className="h-5/6 flex justify-center items-center">
             <div><FiLoader size={55} className="text-blue-600 animate-spin" /></div>
         </div>
 
     }
-    console.log(`lengha -- : ${atendimentos?.totalAtendimentos?.totalAtendimentos?.value}`)
+    console.log(`lengha -- : ${atendimentos}`)
 
     return (
         <>
