@@ -9,10 +9,11 @@ interface UserProp {
 
 export default function Card({ user, atendimentos, }: UserProp) {
     const atendimentosUser = atendimentos?.filter(atendimento => atendimento.nome == user.name) // filtra usuários pelo nome, para trazer seu respectivos atendimentos
-    const { atendendo, esperandoAtend, finalizadosAtend } = atendimentosUser[0]
-    if (!atendimentosUser) {
+     if (!atendimentosUser) {
         return
     }
+    const { atendendo, esperandoAtend, finalizadosAtend } = atendimentosUser[0]
+   
 
     return (<>
         {!user.isMissing && <div className="bg-blue-200 gap-3.5 h-52 rounded-xl pt-3 shadow-xl">

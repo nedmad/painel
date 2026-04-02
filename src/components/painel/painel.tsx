@@ -33,7 +33,6 @@ export default function Painel() {
         </div>
 
     }
-    console.log(`lengha -- : ${atendimentos}`)
 
     return (
         <>
